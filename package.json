@@ -1,0 +1,16 @@
+{
+  "name": "dentist-appointment",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Dentist Appointment Booking Platform (MERN)",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm start --prefix frontend\"",
+    "seed": "node backend/seeder.js",
+    "build": "npm run build --prefix frontend",
+    "start": "npm start --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
+
