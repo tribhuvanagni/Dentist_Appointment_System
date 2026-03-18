@@ -39,6 +39,24 @@ export default function AdminLogin() {
         <p className="mt-1 text-sm text-slate-600">
           Sign in to manage appointments.
         </p>
+        <div style={{
+        background: "#fff3cd",
+        padding: "12px",
+        marginTop: "12px",
+        borderRadius: "8px",
+        fontSize: "14px",
+        lineHeight: "1.6"
+        }}>
+        <p style={{ fontWeight: "bold", marginBottom: "5px" }}>
+        Demo Credentials:
+        </p>
+        <p style={{ margin: 0 }}>
+        Email: <span style={{ fontWeight: "500" }}>admin@clinic.com</span>
+        </p>
+        <p style={{ margin: 0 }}>
+        Password: <span style={{ fontWeight: "500" }}>admin@123</span>
+        </p>
+        </div>
 
         <form onSubmit={onSubmit} className="mt-6 space-y-4">
           {error ? (
