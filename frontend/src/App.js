@@ -18,6 +18,10 @@ function App() {
     return () => clearTimeout(t);
   }, [toastKey, toast]);
 
+  useEffect(() => {
+  fetch("https://dentist-appointment-system.onrender.com/");
+  }, []);
+
   return (
     <div className="min-h-full">
       <Navbar key={location.pathname} />
